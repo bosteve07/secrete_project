@@ -6,8 +6,13 @@ import axios from "axios";
 const app = express();
 const port = 4000;
 
-// 3. Set the view engine, e.g., EJS
-app.set('view engine', 'ejs'); // If you’re using EJS
+
+// Set the views directory
+app.set('views', path.join(__dirname, 'views'));
+
+// Set the view engine to EJS
+app.set('view engine', 'ejs');
+
 
 // 4. Define where your views (templates) are located
 // app.set('views', './views'); // Update this path if necessary
