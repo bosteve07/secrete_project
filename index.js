@@ -10,7 +10,7 @@ const port = 4000;
 app.set('view engine', 'ejs'); // If you’re using EJS
 
 // 4. Define where your views (templates) are located
-app.set('views', './views'); // Update this path if necessary
+// app.set('views', './views'); // Update this path if necessary
 
 // 5. Use the public folder for static files.
 app.use(express.static("public"));
